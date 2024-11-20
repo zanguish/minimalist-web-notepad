@@ -8,7 +8,9 @@ in Golang.
 ### Docker
 
 ```shell
-docker run -d --rm -it -p 8888:8888 --name minimalist-web-notepad registry.cn-hangzhou.aliyuncs.com/opert/minimalist-web-notepad:latest
+docker build -t minimalist-web-notepad:latest .
+
+docker run -d --rm -it -p 8888:8888 --name minimalist-web-notepad minimalist-web-notepad:latest
 ```
 
 ## Usage (CLI)
